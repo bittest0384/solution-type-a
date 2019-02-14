@@ -21,6 +21,14 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
-		return 0;
+		String test = "" + number;
+		int returnNum = 0;
+		for (int i = 0; i < test.length(); i++) {
+			if (test.charAt(i) == '3' || test.charAt(i) == '6' || test.charAt(i) == '9') {
+				returnNum++;
+			}
+		}
+		
+		return returnNum;
 	}
 }
